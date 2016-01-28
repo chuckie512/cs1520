@@ -1,0 +1,10 @@
+
+    Requirements: Write scripts and run them using your Web Server, according to the following specifications:
+      Create 2 php scripts. One will act as an HTML view and the other will act as an include file.
+      The included file may contain any PHP functionality that will affect the view
+      Use a minimum of 3 variables
+      At least one array
+      A simple conditional statement
+      Use part of one of the global PHP variables we spoke about in class
+      In the view, iterate through the array(s) and display their output via HTML
+      Compress the two files and email them to me by 1.27.16 or 2.1.16, depending on what section you are in
