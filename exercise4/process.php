@@ -12,6 +12,12 @@ $name = trim($name);
 $pass = $_POST["password"];
 $pass = trim($pass);
 
+if($name==""||$pass==""){
+    $_SESSION["error"] = "<p class='error'>Please enter your name and password</p>";
+    header('location: '.'ex4.php');
+    die();
+}
+
 $file = fopen("users.txt", "r+");
 
 while(!feof($file)){
