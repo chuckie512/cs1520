@@ -29,11 +29,6 @@ if(isset($_POST["FName"])&&isset($_POST["LName"])){
 ?>
 <html>
 <head>
-
-</head>
-<body>
-<header>
-    <!-- super awesome header -->
     <style>
         .error{
             border-color: red;
@@ -53,7 +48,22 @@ if(isset($_POST["FName"])&&isset($_POST["LName"])){
         body{
             padding: 2%;
         }
+        header{
+            background-color: blue;
+            color: white;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 24pt;
+            padding: 0.25em;
+        }
     </style>
+</head>
+<body>
+<header>
+    <!-- super awesome header -->
+    <p>
+        <b>Sign ups!</b>
+    </p>
 </header>
 
 <?php
