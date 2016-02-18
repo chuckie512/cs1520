@@ -56,6 +56,9 @@ if(isset($_POST["FName"])&&isset($_POST["LName"])){
             font-size: 24pt;
             padding: 0.25em;
         }
+        .entries{
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -84,7 +87,6 @@ if(isset($_POST["FName"])&&isset($_POST["LName"])){
             echo "<p class='error'>something is wrong</p>";
         }
 
-        //show everything
 
     }
 ?>
@@ -97,8 +99,22 @@ if(isset($_POST["FName"])&&isset($_POST["LName"])){
     <br/>
     <input type="text" name="LName" maxlength="30"/>
     <br/>
-    <input type="submit" />
+    <input type="submit" value="Sign up!"/>
     <br/>
 </form>
+<?php
+    if(isset($fname)) {
+        $sql = "SELECT * FROM people";
+        $result = $conn->query($sql);
+        if ($result->num_rows > 0) {
+            echo "<p class='entries'>";
+            echo "current entries: <br/>";
+            while ($row = $result->fetch_assoc()) {
+                echo $row['FName'] . " " . $row['LName'] . "<br/>";
+            }
+            echo "</p>";
+        }
+    }
+?>
 </body>
 </html>
