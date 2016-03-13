@@ -24,6 +24,11 @@ if(isset($_POST["FName"])&&isset($_POST["LName"])){
     $lname = trim($lname);
     $fname = preg_replace('/[^A-Za-z0-9\-]/', '', $fname);
     $lname = preg_replace('/[^A-Za-z0-9\-]/', '', $lname);
+    if($fname==""||$lname==""){
+        $error = "<p class='error'>Please enter your first and last name.</p>";
+        unset($fname);
+        unset($lname);
+    }
 }
 
 ?>
@@ -35,12 +40,16 @@ if(isset($_POST["FName"])&&isset($_POST["LName"])){
             border-radius: 10px;
             color: red;
             text-align: center;
+            border-style: solid;
+            padding: 4px;
         }
         .result{
             color: blue;
             border-color: blue;
             border-radius: 10px;
             text-align: center;
+            border-style: solid;
+            padding: 4px;
         }
         form{
             text-align: center;
@@ -70,6 +79,12 @@ if(isset($_POST["FName"])&&isset($_POST["LName"])){
 </header>
 
 <?php
+    if(isset($error)){
+        echo $error;
+    }
+?>
+
+<?php
     if(isset($fname)){
         $sql = "SELECT * FROM people WHERE FName = '".$fname."' AND LName = '".$lname."'";
         //echo "$sql";
@@ -84,31 +99,33 @@ if(isset($_POST["FName"])&&isset($_POST["LName"])){
             echo "<p class='result'>You've been added to the list</p>";
         } else{
             //duplicate in DB, this shouldn't happen
-            echo "<p class='error'>something is wrong</p>";
+            echo "<p class='error'>Something is wrong, please contact the site admin</p>";
         }
 
 
     }
 ?>
+
 <form method="post" action="names.php">
     First Name:
     <br/>
-    <input type="text" name ="FName" maxlength="30"/>
+    <input type="text" name="FName" maxlength="30" title="First name"/>
     <br/>
     Last Name:
     <br/>
-    <input type="text" name="LName" maxlength="30"/>
+    <input type="text" name="LName" maxlength="30" title="Last name"/>
     <br/>
     <input type="submit" value="Sign up!"/>
     <br/>
 </form>
+
 <?php
     if(isset($fname)) {
         $sql = "SELECT * FROM people";
         $result = $conn->query($sql);
         if ($result->num_rows > 0) {
             echo "<p class='entries'>";
-            echo "current entries: <br/>";
+            echo "Current Entries: <br/>";
             while ($row = $result->fetch_assoc()) {
                 echo $row['FName'] . " " . $row['LName'] . "<br/>";
             }
@@ -116,5 +133,6 @@ if(isset($_POST["FName"])&&isset($_POST["LName"])){
         }
     }
 ?>
+
 </body>
 </html>

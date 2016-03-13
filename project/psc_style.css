@@ -1,0 +1,74 @@
+header{
+    background-color: #1d4b8f;
+    color: gold;
+    text-align: center;
+    border-radius: 10px;
+}
+header li{
+    display: inline;
+}
+header li a{
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bold;
+}
+header a{
+    color: gold;
+}
+header div{
+    display: inline-block;
+}
+header img{
+    padding-top: 25%;
+    padding-bottom: 0%;
+}
+
+body{
+    background: palegoldenrod;
+    text-align: center;
+}
+p{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+table{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.pics{
+    width: 30%;
+    text-align: center;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.pictures{
+    text-align: center;
+    margin-top: 5px;
+}
+
+.about p{
+    text-align: left;
+}
+.events ul{
+    margin-left: 30%;
+}
+.events li{
+    text-align: left;
+    padding-bottom: 5px;
+}
+.results table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+.results td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.select_swimmer{
+    margin-top: 12px;
+}
