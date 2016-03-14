@@ -81,7 +81,7 @@
         </ul>
     </div>
     <div>
-        <a href="contact.php">contact the admins</a>
+        <a href="contact.php">contact the admin</a>
     </div>
 
 </body>
