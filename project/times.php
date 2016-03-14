@@ -93,5 +93,9 @@ if($conn->connect_error){
             ?>
         </table>
     </div>
+    <div>
+        <br/>
+        <a href="submit.php">Add another swimmer</a>
+    </div>
 </body>
 </html>
