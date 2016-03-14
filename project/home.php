@@ -80,6 +80,9 @@
             <li>Club Sports Organization of the Year 2014</li>
         </ul>
     </div>
+    <div>
+        <a href="contact.php">contact the admins</a>
+    </div>
 
 </body>
 </html>
