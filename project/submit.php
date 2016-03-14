@@ -1,4 +1,7 @@
 <?php
+    //TODO add times
+    //TODO modify times
+    //TODO password protect
     if(isset($_POST['name'])){
         $server_name = "127.0.0.1";
         $username = "root";
@@ -31,7 +34,7 @@ VALUES ('".$_POST['name']."','N/a', 'N/a', 'N/a', 'N/a', 'N/a', 'N/a', 'N/a', 'N
 <body>
     <?php include 'header.php'; ?>
     <form action="submit.php" method="post">
-        <input type="text" value="Name" name="name">
+        <input type="text" placeholder="Name" name="name">
         <input type="submit" value="add">
     </form>
     <?php
