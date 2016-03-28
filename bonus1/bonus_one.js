@@ -11,6 +11,9 @@
 // $.html(), $.text(), etc.
 // keyup events could be helpful to get value of field as the user types
 
+//document.getElementById("search").addEventListener("submit", mysearch);
+
+
 function magic() {
 	// Magic!
 	console.log('Keepin\'n it clean with an external script!');
@@ -31,4 +34,14 @@ function magic() {
     };
     xhttp.open("GET", "http://www.mattbowytz.com/simple_api.json?data=" + type, true);
     xhttp.send();
+}
+
+
+function mysearch(){
+    //alert("help!");
+    var search = document.getElementById("search").value;
+    console.log(search);
+    //alert("2");
+    window.location.replace("http://www.google.com/search?q=" + search);
+    //alert("3");
 }
