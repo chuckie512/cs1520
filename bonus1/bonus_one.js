@@ -11,7 +11,7 @@
 // $.html(), $.text(), etc.
 // keyup events could be helpful to get value of field as the user types
 
-//document.getElementById("search").addEventListener("submit", mysearch);
+document.getElementById("search").addEventListener("submit", mysearch);
 
 
 function magic() {
@@ -37,7 +37,8 @@ function magic() {
 }
 
 
-function mysearch(){
+function mysearch(e){
+    e.preventDefault();
     //alert("help!");
     var search = document.getElementById("search").value;
     console.log(search);
