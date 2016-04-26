@@ -76,3 +76,41 @@ table{
     width: 50%
 }
 
+/* I don't think i've ever hated CSS more than right now... */
+.team_pic{
+    width: 60%;
+    display: inline-block;
+}
+
+#pic_back{
+    border: solid black 1px;
+    display: inline-block;
+    position: absolute;
+    height: 90%;
+    width: 10%;
+    left: 9%;
+
+}
+
+#pic_back p{
+    transform: scale(1,4);
+}
+
+#pic_forward{
+    border: solid black 1px;
+    display: inline-block;
+    position: absolute;
+    height: 90%;
+    width: 10%;
+    left: 81%;
+
+}
+
+#pic_forward p{
+    transform: scale(1,4);
+
+}
+
+.ahh{
+    text-align: center;
+}

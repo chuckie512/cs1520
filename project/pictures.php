@@ -8,11 +8,11 @@
 <body>
   <?php include 'header.php'; ?>
   <div class="pictures">
-    <a href="pics/fair_pic.jpg">   <img src="pics/fair_pic.jpg"   class="pics"> </a>
-    <a href="pics/team_pic.jpg">   <img src="pics/team_pic.jpg"   class="pics"> </a>
-    <a href="pics/team_pic_2.jpg"> <img src="pics/team_pic_2.jpg" class="pics"> </a>
-    <a href="pics/team_pic_3.jpg"> <img src="pics/team_pic_3.jpg" class="pics"> </a>
-    <a href="pics/team_pic_4.jpg"> <img src="pics/team_pic_4.jpg" class="pics"> </a>
+    <a href="display_picture.php?pic=fair_pic.jpg">   <img src="pics/fair_pic.jpg"   class="pics"> </a>
+    <a href="display_picture.php?pic=team_pic.jpg">   <img src="pics/team_pic.jpg"   class="pics"> </a>
+    <a href="display_picture.php?pic=team_pic_2.jpg"> <img src="pics/team_pic_2.jpg" class="pics"> </a>
+    <a href="display_picture.php?pic=team_pic_3.jpg"> <img src="pics/team_pic_3.jpg" class="pics"> </a>
+    <a href="display_picture.php?pic=team_pic_4.jpg"> <img src="pics/team_pic_4.jpg" class="pics"> </a>
   </div>
 </body>
 </html>
