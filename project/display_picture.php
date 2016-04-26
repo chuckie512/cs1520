@@ -25,5 +25,7 @@
       <p>&#9654;</p>
     </div>
   </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="scripts/photoscript.js" ></script>
 </body>
 </html>
