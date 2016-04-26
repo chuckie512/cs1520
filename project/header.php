@@ -8,17 +8,17 @@
 
 echo "<header>
         <div>
-            <img src='logo.jpg' alt='logo' style='height: 100px'>
+          <img src='logo.jpg' alt='logo' style='height: 100px'>
         </div>
         <div>
-            <h1>Panther Swim Club</h1>
-            <nav>
-                <ul>
-                    <li> <a href='home.php'>Home</a></li>
-                    <li> <a href='pictures.php'>Pictures</a></li>
-                    <li> <a href='times.php'>Swimmers and Times</a> </li>
-                    <li> <a href='events.php'>Events</a> </li>
-                </ul>
-            </nav>
+          <h1>Panther Swim Club</h1>
+          <nav>
+            <ul>
+              <li> <a href='home.php'>Home</a></li>
+              <li> <a href='pictures.php'>Pictures</a></li>
+              <li> <a href='times.php'>Swimmers and Times</a> </li>
+              <li> <a href='events.php'>Events</a> </li>
+            </ul>
+          </nav>
         </div>
     </header>";
