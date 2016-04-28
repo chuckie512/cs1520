@@ -111,6 +111,12 @@ table{
 
 }
 
-.ahh{
-    text-align: center;
+.back{
+    text-align: left;
+}
+.back a{
+    text-align: left;
+    color: blue;
+    font-size: large;
+    margin-left: 10%;
 }

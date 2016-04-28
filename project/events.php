@@ -19,7 +19,7 @@ function print_date($event_date){
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>times</title>
+  <title>Events</title>
   <link rel="stylesheet" type="text/css" href="psc_style.css">
 </head>
 <body>

@@ -5,7 +5,11 @@
   <title>Panther Swim Club</title>
   <link rel="stylesheet" type="text/css" href="psc_style.css">
 </head>
-<body class="ahh">
+<body>
+  <div class="back">
+    <a href="pictures.php">Back</a>
+  </div>
+
   <div>
     <div id="pic_back">
       <p>&#x25C0;</p>
