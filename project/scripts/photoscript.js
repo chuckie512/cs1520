@@ -1,5 +1,9 @@
 /**
  * Created by cas275 on 4/26/16.
+ *
+ * this is the script to switch between photos when the div #pic_back and #pic_forward are clicked
+ * add more photos by modifying the array pic_arr to included the additional photos
+ * These photos should be kept in the 'pics' directory under the root directory
  */
 
 $(document).ready(function(){

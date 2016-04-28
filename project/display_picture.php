@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--displays some pictures-->
 <html lang="en">
 <head>
   <meta charset="UTF-8">

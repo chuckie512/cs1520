@@ -120,3 +120,7 @@ table{
     font-size: large;
     margin-left: 10%;
 }
+
+.results tr:nth-child(even){
+    background-color: lightgrey;
+}
