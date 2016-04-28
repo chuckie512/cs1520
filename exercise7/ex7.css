@@ -1,0 +1,27 @@
+body{
+    text-align: center;
+    background-color: lightblue;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
+}
+#data{
+    display: none;
+    border: solid blue 2px;
+    border-radius: 15px;
+    margin-top: 5px;
+    padding: 4px;
+}
+#show{
+    background-color: white;
+    border: solid blue 2px;
+    padding: 6px;
+    margin: 5px;
+    border-radius: 10px;
+}
+header{
+    background-color: blue;
+    border-radius: 15px;
+    color: white;
+
+}

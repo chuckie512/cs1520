@@ -31,7 +31,7 @@
       background-color: blue;
       color: white;
       border-radius: 5px;
-      
+
     }
   </style>
 </head>
@@ -59,7 +59,7 @@ if(isset($_GET["classID"])){
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-<script>
+<script type="text/javascript">
   $("#search").click(function(event){
 
     var input = $("#searchbox").val(); //get the user's input
