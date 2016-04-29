@@ -1,0 +1,26 @@
+body{
+    background-color: lightblue;
+    margin: 5%;
+    text-align: center;
+}
+#start{
+    background-color: white;
+    color: blue;
+    border: solid blue 2px;
+    border-radius: 15px;
+    padding: 5px;
+    text-align: center;
+    margin-top: 5%;
+    font-size: large;
+}
+#score{
+    margin-top: 10px;
+    font-size: large;
+    font-weight: bold;
+}
+
+header{
+    background-color: blue;
+    color: white;
+    border-radius: 15px;
+}
