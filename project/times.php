@@ -96,5 +96,7 @@ if($conn->connect_error){
     <br/>
     <a href="submit.php">Add another swimmer</a>
   </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script type="text/javascript" src="scripts/timesScript.js"></script>
 </body>
 </html>

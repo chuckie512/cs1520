@@ -60,6 +60,9 @@ table{
     text-align: left;
     padding-bottom: 5px;
 }
+.results{
+    display: none;
+}
 .results table {
     border: 1px solid black;
     border-collapse: collapse;
@@ -94,6 +97,7 @@ table{
 
 #pic_back p{
     transform: scale(1,4);
+
 }
 
 #pic_forward{
@@ -113,6 +117,7 @@ table{
 
 .back{
     text-align: left;
+    margin-bottom: 3px;
 }
 .back a{
     text-align: left;
@@ -124,3 +129,4 @@ table{
 .results tr:nth-child(even){
     background-color: lightgrey;
 }
+
