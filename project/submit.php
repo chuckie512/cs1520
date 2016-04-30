@@ -33,8 +33,8 @@ VALUES ('".$_POST['name']."','N/a', 'N/a', 'N/a', 'N/a', 'N/a', 'N/a', 'N/a', 'N
 </head>
 <body>
   <?php include 'header.php'; ?>
-  <form action="submit.php" method="post">
-    <input type="text" placeholder="Name" name="name">
+  <form action="submit.php" method="post" id="newSwimmer">
+    <input type="text" placeholder="Swimmer's name" name="name">
     <input type="submit" value="add">
   </form>
   <?php

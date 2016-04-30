@@ -21,4 +21,9 @@ echo "<header>
             </ul>
           </nav>
         </div>
-    </header>";
+    </header>
+    <noscript>
+      <p>
+        Javascript is currently disabled or not supported. Some aspects of this site may work correctly
+      </p>
+    </noscript>";
