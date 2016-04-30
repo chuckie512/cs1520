@@ -6,6 +6,7 @@ var words = [];
 
 
 $(document).ready(function(){
+
   $("#button").click(function(){
     getWord();
   });
@@ -29,16 +30,25 @@ function getWord(){
         name: word,
         val: 1
       });
+
     }
+    updateTable();
   });
-  updateTable();
+
+
+
+
 }
 
 function updateTable(){
+
   var tableString = "";
   var j = 0;
+
   for(j=0; j<words.length; j++){
     tableString += " <tr> <td>" + words[j].name + "</td><td>"+words[j].val+"</td></tr> ";
+    
   }
   $(".thetable").html(tableString);
+
 }
